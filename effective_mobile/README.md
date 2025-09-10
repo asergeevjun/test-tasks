@@ -1,3 +1,6 @@
+# запуск процесса (для тестов)
+exec -a test sleep 3600 &
+
 # копируем скрипт и даём права на выполнение
 sudo cp monitor-test-process.sh /usr/local/bin/
 
