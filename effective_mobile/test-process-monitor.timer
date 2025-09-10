@@ -1,0 +1,11 @@
+[Unit]
+Description=Запуск мониторинга процесса test каждую минуту
+Requires=test-process-monitor.service
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=1min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
